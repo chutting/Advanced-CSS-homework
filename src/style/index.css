@@ -5,6 +5,9 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
 }
@@ -17,4 +20,157 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+header {
+  width: 100%;
+}
+
+.navigation-options {
+  width: 100%;
+  position: fixed;
+  padding: 15px 0;
+  display: flex;
+  flex: auto;
+  justify-content: space-around;
+
+  background-color: black;
+  color: white;
+}
+
+.main {
+  margin-top: 72px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.aside {
+  width: 250px;
+}
+
+.about {
+  padding: 20px 10px;
+  background-color: #faf6f6;
+}
+
+.archives {
+  padding: 20px 10px;
+  margin-top: 20px;
+}
+
+.archives-list {
+  margin: 20px 0;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+  font-style:oblique;
+  font-weight: bold;
+}
+
+.figures {
+  width: 820px;
+  column-count: 2;
+  column-width: 350px;
+  column-gap: 10px;
+}
+
+.figure-container {
+  break-inside: avoid;
+  width: 400px;
+  margin: 0;
+  border: 1px solid #d3d3d3;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  font-size: 14px;
+}
+
+.figure-pic-container {
+  height: 150px;
+  overflow: hidden;
+}
+
+.figure-img {
+  width: 400px;
+}
+
+.figure-caption {
+  padding: 10px 15px;
+}
+
+.view-details {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #008cff;
+}
+
+.figure-title {
+  font-style: normal;
+  font-weight: bold;
+}
+
+.sign-in {
+  position: relative;
+  width: 300px;
+}
+
+.sign-in-container {
+  position: fixed;
+  width: 300px;
+  height: 200px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  top: 50%;
+  margin-top: -100px;
+  background-color: #faf6f6;
+}
+
+.sign-in-text-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-input-box {
+  height: 40px;
+  width: 200px;
+  border: 1px solid lightgray;
+}
+
+.form-input-box::placeholder {
+  padding-left: 10px;
+}
+
+.sign-in-checkbox {
+  margin-bottom: 10px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.form-submit {
+  width: 200px;
+  height: 40px;
+  border: none;
+  background-color: #008cff;
+  color: white;
+}
+
+.footer {
+  margin-top: 20px;
+  width: 100%;
+  padding: 20px;
+  background-color: #faf6f6;
+  text-align: center;
+  font-size: 12px;
+}
+
+.built-owner {
+  margin: 0;
+  color: lightgray;
 }
