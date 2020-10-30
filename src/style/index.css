@@ -43,6 +43,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  height: 750px;
 }
 
 .aside {
@@ -66,25 +67,34 @@ header {
 h2 {
   padding: 0;
   margin: 0;
-  font-style:oblique;
   font-weight: bold;
+}
+
+.aside-title {
+  font-style: italic;
 }
 
 .figures {
   width: 820px;
-  column-count: 2;
-  column-width: 350px;
-  column-gap: 10px;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .figure-container {
-  break-inside: avoid;
   width: 400px;
   margin: 0;
   border: 1px solid #d3d3d3;
   margin-bottom: 10px;
   padding-bottom: 20px;
   font-size: 14px;
+}
+
+.figure-container:nth-child(2n + 1) {
+  order: 1;
+}
+
+.figure-container:nth-child(2n) {
+  order: 2;
 }
 
 .figure-pic-container {
@@ -108,16 +118,14 @@ h2 {
 
 .figure-title {
   font-style: normal;
-  font-weight: bold;
 }
 
 .sign-in {
-  position: relative;
-  width: 300px;
+  display: flex;
+  align-items: center;
 }
 
 .sign-in-container {
-  position: fixed;
   width: 300px;
   height: 200px;
   right: 20px;
@@ -125,8 +133,6 @@ h2 {
   flex-direction: column;
   padding: 20px;
   align-items: center;
-  top: 50%;
-  margin-top: -100px;
   background-color: #faf6f6;
 }
 
@@ -162,7 +168,6 @@ h2 {
 }
 
 .footer {
-  margin-top: 20px;
   width: 100%;
   padding: 20px;
   background-color: #faf6f6;
